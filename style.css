@@ -54,3 +54,57 @@ display:block;
 font-size:22px;
 margin-bottom:20px;
 }
+button{
+background:white;
+color:#ff1493;
+border:none;
+padding:15px 30px;
+border-radius:35px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+margin:10px;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+background:#ffe4ef;
+}
+
+button:active{
+transform:scale(.96);
+}
+
+#result{
+display:none;
+animation:fade 1s ease;
+}
+
+.heart{
+position:fixed;
+bottom:-50px;
+font-size:28px;
+pointer-events:none;
+animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+0%{
+transform:translateY(0);
+opacity:1;
+}
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+@keyframes fade{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
